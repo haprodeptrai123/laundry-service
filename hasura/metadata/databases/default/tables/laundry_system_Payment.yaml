@@ -1,5 +1,5 @@
 table:
-  name: Payment
+  name: payment
   schema: laundry_system
 array_relationships:
   - name: PaymentTrans
@@ -7,5 +7,5 @@ array_relationships:
       foreign_key_constraint_on:
         column: payment_id
         table:
-          name: Transaction
+          name: transaction
           schema: laundry_system

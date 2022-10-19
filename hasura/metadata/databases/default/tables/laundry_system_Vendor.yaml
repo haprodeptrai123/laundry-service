@@ -1,5 +1,5 @@
 table:
-  name: Vendor
+  name: vendor
   schema: laundry_system
 array_relationships:
   - name: VendorManager
@@ -9,7 +9,7 @@ array_relationships:
           vendor_id: vendor_id
         insertion_order: null
         remote_table:
-          name: Manager
+          name: manager
           schema: laundry_system
   - name: VendorStaff
     using:
@@ -18,5 +18,5 @@ array_relationships:
           vendor_id: vendor_id
         insertion_order: null
         remote_table:
-          name: Staffs
+          name: staffs
           schema: laundry_system

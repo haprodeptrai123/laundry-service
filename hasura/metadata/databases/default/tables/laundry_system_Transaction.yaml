@@ -1,5 +1,5 @@
 table:
-  name: Transaction
+  name: transaction
   schema: laundry_system
 array_relationships:
   - name: TransOrder
@@ -9,7 +9,7 @@ array_relationships:
           order_id: order_id
         insertion_order: null
         remote_table:
-          name: Orders
+          name: orders
           schema: laundry_system
   - name: TransPayment
     using:
@@ -18,5 +18,5 @@ array_relationships:
           payment_id: payment_id
         insertion_order: null
         remote_table:
-          name: Payment
+          name: payment
           schema: laundry_system

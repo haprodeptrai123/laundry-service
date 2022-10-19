@@ -1,5 +1,5 @@
 table:
-  name: Process
+  name: process
   schema: laundry_system
 array_relationships:
   - name: ProcessManager
@@ -9,7 +9,7 @@ array_relationships:
           manager_id: manager_id
         insertion_order: null
         remote_table:
-          name: Manager
+          name: manager
           schema: laundry_system
   - name: ProcessOrder
     using:
@@ -18,7 +18,7 @@ array_relationships:
           order_detail_id: order_detail_id
         insertion_order: null
         remote_table:
-          name: OrderDetails
+          name: orderdetails
           schema: laundry_system
   - name: ProcessStaff
     using:
@@ -27,5 +27,5 @@ array_relationships:
           staff_id: staff_id
         insertion_order: null
         remote_table:
-          name: Staffs
+          name: staffs
           schema: laundry_system

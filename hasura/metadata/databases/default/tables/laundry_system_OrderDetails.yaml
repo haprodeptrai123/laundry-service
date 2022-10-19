@@ -1,5 +1,5 @@
 table:
-  name: OrderDetails
+  name: orderdetails
   schema: laundry_system
 array_relationships:
   - name: OrderDetailEquipment
@@ -9,7 +9,7 @@ array_relationships:
           equipment_id: equipment_id
         insertion_order: null
         remote_table:
-          name: Equipment
+          name: equipment
           schema: laundry_system
   - name: OrderDetailOrder
     using:
@@ -18,14 +18,14 @@ array_relationships:
           order_id: order_id
         insertion_order: null
         remote_table:
-          name: Orders
+          name: orders
           schema: laundry_system
   - name: OrderDetailProcess
     using:
       foreign_key_constraint_on:
         column: order_detail_id
         table:
-          name: Process
+          name: process
           schema: laundry_system
   - name: OrderDetailProduct
     using:
@@ -34,7 +34,7 @@ array_relationships:
           product_id: product_id
         insertion_order: null
         remote_table:
-          name: Product
+          name: product
           schema: laundry_system
   - name: OrderDetailService
     using:
@@ -43,14 +43,14 @@ array_relationships:
           service_id: service_id
         insertion_order: null
         remote_table:
-          name: Service
+          name: service
           schema: laundry_system
   - name: OrderDetailTracking
     using:
       foreign_key_constraint_on:
         column: order_detail_id
         table:
-          name: TrackingOrder
+          name: trackingorder
           schema: laundry_system
   - name: OrderDetailVoucher
     using:
@@ -59,5 +59,5 @@ array_relationships:
           voucher_id: voucher_id
         insertion_order: null
         remote_table:
-          name: Voucher
+          name: voucher
           schema: laundry_system

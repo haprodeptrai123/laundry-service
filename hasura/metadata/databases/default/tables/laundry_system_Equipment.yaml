@@ -1,5 +1,5 @@
 table:
-  name: Equipment
+  name: equipment
   schema: laundry_system
 array_relationships:
   - name: EquipmentOrderDetails
@@ -7,5 +7,5 @@ array_relationships:
       foreign_key_constraint_on:
         column: equipment_id
         table:
-          name: OrderDetails
+          name: orderdetails
           schema: laundry_system
