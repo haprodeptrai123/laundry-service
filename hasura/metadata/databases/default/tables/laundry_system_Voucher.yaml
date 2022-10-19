@@ -1,0 +1,22 @@
+table:
+  name: Voucher
+  schema: laundry_system
+array_relationships:
+  - name: VoucherOrderDetail
+    using:
+      manual_configuration:
+        column_mapping:
+          voucher_id: voucher_id
+        insertion_order: null
+        remote_table:
+          name: OrderDetails
+          schema: laundry_system
+  - name: VoucherService
+    using:
+      manual_configuration:
+        column_mapping:
+          service_id: service_id
+        insertion_order: null
+        remote_table:
+          name: Service
+          schema: laundry_system

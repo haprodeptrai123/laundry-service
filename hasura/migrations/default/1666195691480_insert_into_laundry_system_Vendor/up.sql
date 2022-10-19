@@ -1,0 +1,1 @@
+INSERT INTO "laundry_system"."Vendor"("vendor_id", "vendor_name", "phone", "email", "street", "district", "city", "zip_code") VALUES (1, E'MrWash Go Vap', E'0123654123', E'mrwash@gmail.com', E'1 Quang Trung', E'Go Vap', E'HCMC', E'7000000');

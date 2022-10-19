@@ -1,0 +1,1 @@
+INSERT INTO "laundry_system"."Orders"("order_id", "customer_id", "staff_id", "manager_id", "vendor_id", "required_giving_time", "required_delivery_time", "payment_id", "create_at") VALUES (2, 1, 1, 1, 1, E'2022-12-13T00:00:00', E'2022-12-17T00:00:00', 1, E'2022-10-19T16:14:11.159094+00:00');

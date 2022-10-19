@@ -1,0 +1,1 @@
+CREATE TABLE "laundry_system"."Service" ("service_id" Integer NOT NULL, "service_name" text NOT NULL, "service_description" text NOT NULL, "min_weight" integer NOT NULL, "max_weight" integer NOT NULL, "service_price" float8 NOT NULL, PRIMARY KEY ("service_id") , UNIQUE ("service_id"));

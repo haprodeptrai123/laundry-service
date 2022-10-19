@@ -1,0 +1,1 @@
+CREATE TABLE "laundry_system"."Equipment" ("equipment_id" Integer NOT NULL, "equipment_name" text NOT NULL, "equipment_description" text NOT NULL, "equipment_price" float8 NOT NULL, PRIMARY KEY ("equipment_id") , UNIQUE ("equipment_id"));

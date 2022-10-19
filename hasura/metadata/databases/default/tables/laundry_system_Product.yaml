@@ -1,0 +1,13 @@
+table:
+  name: Product
+  schema: laundry_system
+array_relationships:
+  - name: ProductOrder
+    using:
+      manual_configuration:
+        column_mapping:
+          product_id: product_id
+        insertion_order: null
+        remote_table:
+          name: OrderDetails
+          schema: laundry_system

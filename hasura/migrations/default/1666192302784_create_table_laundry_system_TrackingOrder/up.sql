@@ -1,0 +1,1 @@
+CREATE TABLE "laundry_system"."TrackingOrder" ("tracking_id" Integer NOT NULL, "order_detail_id" integer NOT NULL, "time" timestamp NOT NULL, "order_status" text NOT NULL, PRIMARY KEY ("tracking_id") , UNIQUE ("tracking_id"));

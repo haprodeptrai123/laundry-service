@@ -1,0 +1,31 @@
+table:
+  name: WorkSchedule
+  schema: laundry_system
+array_relationships:
+  - name: WorkSchManager
+    using:
+      manual_configuration:
+        column_mapping:
+          manager_id: manager_id
+        insertion_order: null
+        remote_table:
+          name: Manager
+          schema: laundry_system
+  - name: WorkSchSchedule
+    using:
+      manual_configuration:
+        column_mapping:
+          schedule_id: schedule_id
+        insertion_order: null
+        remote_table:
+          name: Schedule
+          schema: laundry_system
+  - name: WorkSchStaff
+    using:
+      manual_configuration:
+        column_mapping:
+          staff_id: staff_id
+        insertion_order: null
+        remote_table:
+          name: Staffs
+          schema: laundry_system

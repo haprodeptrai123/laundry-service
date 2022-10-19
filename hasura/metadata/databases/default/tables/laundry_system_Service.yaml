@@ -1,0 +1,20 @@
+table:
+  name: Service
+  schema: laundry_system
+array_relationships:
+  - name: ServiceOrder
+    using:
+      manual_configuration:
+        column_mapping:
+          service_id: service_id
+        insertion_order: null
+        remote_table:
+          name: OrderDetails
+          schema: laundry_system
+  - name: ServiceVoucher
+    using:
+      foreign_key_constraint_on:
+        column: service_id
+        table:
+          name: Voucher
+          schema: laundry_system

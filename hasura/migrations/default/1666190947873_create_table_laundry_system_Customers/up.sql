@@ -1,0 +1,1 @@
+CREATE TABLE "laundry_system"."Customers" ("id" integer NOT NULL, "full_name" text NOT NULL, "email" text NOT NULL, "phone" Text NOT NULL, "address" text NOT NULL, "active" Boolean NOT NULL, PRIMARY KEY ("id") , UNIQUE ("id"));

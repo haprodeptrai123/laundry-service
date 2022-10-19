@@ -1,0 +1,11 @@
+table:
+  name: Schedule
+  schema: laundry_system
+array_relationships:
+  - name: ScheduleWorkSch
+    using:
+      foreign_key_constraint_on:
+        column: schedule_id
+        table:
+          name: WorkSchedule
+          schema: laundry_system

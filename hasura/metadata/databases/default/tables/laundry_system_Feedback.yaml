@@ -1,0 +1,13 @@
+table:
+  name: Feedback
+  schema: laundry_system
+array_relationships:
+  - name: FeedbackOrder
+    using:
+      manual_configuration:
+        column_mapping:
+          order_id: order_id
+        insertion_order: null
+        remote_table:
+          name: Orders
+          schema: laundry_system
