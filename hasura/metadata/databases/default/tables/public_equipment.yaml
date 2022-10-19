@@ -1,0 +1,3 @@
+table:
+  name: equipment
+  schema: public
