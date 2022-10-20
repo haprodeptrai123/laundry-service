@@ -1,5 +1,5 @@
 table:
-  name: voucher
+  name: Voucher
   schema: laundry_system
 array_relationships:
   - name: VoucherOrderDetail
@@ -9,7 +9,7 @@ array_relationships:
           voucher_id: voucher_id
         insertion_order: null
         remote_table:
-          name: orderdetails
+          name: OrderDetails
           schema: laundry_system
   - name: VoucherService
     using:
@@ -18,5 +18,5 @@ array_relationships:
           service_id: service_id
         insertion_order: null
         remote_table:
-          name: service
+          name: Service
           schema: laundry_system

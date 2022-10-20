@@ -1,5 +1,5 @@
 table:
-  name: staffs
+  name: Staffs
   schema: laundry_system
 array_relationships:
   - name: StaffManager
@@ -9,7 +9,7 @@ array_relationships:
           manager_id: manager_id
         insertion_order: null
         remote_table:
-          name: manager
+          name: Manager
           schema: laundry_system
   - name: StaffOrder
     using:
@@ -18,7 +18,7 @@ array_relationships:
           staff_id: staff_id
         insertion_order: null
         remote_table:
-          name: orders
+          name: Orders
           schema: laundry_system
   - name: StaffProcess
     using:
@@ -27,7 +27,7 @@ array_relationships:
           staff_id: staff_id
         insertion_order: null
         remote_table:
-          name: process
+          name: Process
           schema: laundry_system
   - name: StaffVendor
     using:
@@ -36,12 +36,12 @@ array_relationships:
           vendor_id: vendor_id
         insertion_order: null
         remote_table:
-          name: vendor
+          name: Vendor
           schema: laundry_system
   - name: StaffWorkSch
     using:
       foreign_key_constraint_on:
         column: staff_id
         table:
-          name: workschedule
+          name: WorkSchedule
           schema: laundry_system

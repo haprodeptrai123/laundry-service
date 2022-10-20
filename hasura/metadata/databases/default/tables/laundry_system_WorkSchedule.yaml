@@ -1,5 +1,5 @@
 table:
-  name: workschedule
+  name: WorkSchedule
   schema: laundry_system
 array_relationships:
   - name: WorkSchManager
@@ -9,7 +9,7 @@ array_relationships:
           manager_id: manager_id
         insertion_order: null
         remote_table:
-          name: manager
+          name: Manager
           schema: laundry_system
   - name: WorkSchSchedule
     using:
@@ -18,7 +18,7 @@ array_relationships:
           schedule_id: schedule_id
         insertion_order: null
         remote_table:
-          name: schedule
+          name: Schedule
           schema: laundry_system
   - name: WorkSchStaff
     using:
@@ -27,5 +27,5 @@ array_relationships:
           staff_id: staff_id
         insertion_order: null
         remote_table:
-          name: staffs
+          name: Staffs
           schema: laundry_system

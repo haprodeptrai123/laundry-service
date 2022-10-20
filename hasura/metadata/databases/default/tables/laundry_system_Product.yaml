@@ -1,5 +1,5 @@
 table:
-  name: product
+  name: Product
   schema: laundry_system
 array_relationships:
   - name: ProductOrder
@@ -9,5 +9,5 @@ array_relationships:
           product_id: product_id
         insertion_order: null
         remote_table:
-          name: orderdetails
+          name: OrderDetails
           schema: laundry_system

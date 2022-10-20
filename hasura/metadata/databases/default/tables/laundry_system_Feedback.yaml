@@ -1,5 +1,5 @@
 table:
-  name: feedback
+  name: Feedback
   schema: laundry_system
 array_relationships:
   - name: FeedbackOrder
@@ -9,5 +9,5 @@ array_relationships:
           order_id: order_id
         insertion_order: null
         remote_table:
-          name: orders
+          name: Orders
           schema: laundry_system

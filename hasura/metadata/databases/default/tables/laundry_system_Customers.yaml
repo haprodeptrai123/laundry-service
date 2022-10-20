@@ -1,5 +1,5 @@
 table:
-  name: customers
+  name: Customers
   schema: laundry_system
 array_relationships:
   - name: CustomerOrder
@@ -7,5 +7,5 @@ array_relationships:
       foreign_key_constraint_on:
         column: customer_id
         table:
-          name: orders
+          name: Orders
           schema: laundry_system

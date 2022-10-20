@@ -1,5 +1,5 @@
 table:
-  name: trackingorder
+  name: TrackingOrder
   schema: laundry_system
 array_relationships:
   - name: TrackOrder
@@ -9,5 +9,5 @@ array_relationships:
           order_detail_id: order_detail_id
         insertion_order: null
         remote_table:
-          name: orderdetails
+          name: OrderDetails
           schema: laundry_system

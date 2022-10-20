@@ -1,5 +1,5 @@
 table:
-  name: orders
+  name: Orders
   schema: laundry_system
 array_relationships:
   - name: OrderCust
@@ -9,7 +9,7 @@ array_relationships:
           customer_id: id
         insertion_order: null
         remote_table:
-          name: customers
+          name: Customers
           schema: laundry_system
   - name: OrderFeedback
     using:
@@ -18,7 +18,7 @@ array_relationships:
           order_id: order_id
         insertion_order: null
         remote_table:
-          name: feedback
+          name: Feedback
           schema: laundry_system
   - name: OrderManager
     using:
@@ -27,7 +27,7 @@ array_relationships:
           manager_id: manager_id
         insertion_order: null
         remote_table:
-          name: manager
+          name: Manager
           schema: laundry_system
   - name: OrderOrderDetail
     using:
@@ -36,7 +36,7 @@ array_relationships:
           order_id: order_id
         insertion_order: null
         remote_table:
-          name: orderdetails
+          name: OrderDetails
           schema: laundry_system
   - name: OrderPayment
     using:
@@ -45,7 +45,7 @@ array_relationships:
           payment_id: payment_id
         insertion_order: null
         remote_table:
-          name: payment
+          name: Payment
           schema: laundry_system
   - name: OrderStaff
     using:
@@ -54,14 +54,14 @@ array_relationships:
           staff_id: staff_id
         insertion_order: null
         remote_table:
-          name: staffs
+          name: Staffs
           schema: laundry_system
   - name: OrderTrans
     using:
       foreign_key_constraint_on:
         column: order_id
         table:
-          name: transaction
+          name: Transaction
           schema: laundry_system
   - name: OrderVendor
     using:
@@ -70,5 +70,5 @@ array_relationships:
           vendor_id: vendor_id
         insertion_order: null
         remote_table:
-          name: vendor
+          name: Vendor
           schema: laundry_system

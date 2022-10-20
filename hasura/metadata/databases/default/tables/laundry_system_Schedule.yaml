@@ -1,5 +1,5 @@
 table:
-  name: schedule
+  name: Schedule
   schema: laundry_system
 array_relationships:
   - name: ScheduleWorkSch
@@ -7,5 +7,5 @@ array_relationships:
       foreign_key_constraint_on:
         column: schedule_id
         table:
-          name: workschedule
+          name: WorkSchedule
           schema: laundry_system
