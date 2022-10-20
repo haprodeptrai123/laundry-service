@@ -1,0 +1,1 @@
+CREATE TABLE "laundry_service"."staff" ("staff_id" serial NOT NULL, "vendor_id" integer NOT NULL, "manager_id" integer NOT NULL, "fullname" text NOT NULL, "email" text NOT NULL, "phone" text NOT NULL, "staff_role" text NOT NULL, "working_status" boolean NOT NULL, PRIMARY KEY ("staff_id") , UNIQUE ("staff_id"));

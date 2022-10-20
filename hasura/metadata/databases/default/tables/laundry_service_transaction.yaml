@@ -1,0 +1,22 @@
+table:
+  name: transaction
+  schema: laundry_service
+array_relationships:
+  - name: TransOrder
+    using:
+      manual_configuration:
+        column_mapping:
+          order_id: order_id
+        insertion_order: null
+        remote_table:
+          name: orders
+          schema: laundry_service
+  - name: TransPayment
+    using:
+      manual_configuration:
+        column_mapping:
+          payment_id: payment_id
+        insertion_order: null
+        remote_table:
+          name: payment
+          schema: laundry_service

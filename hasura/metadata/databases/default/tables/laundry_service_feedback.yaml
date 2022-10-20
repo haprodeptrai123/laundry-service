@@ -1,0 +1,11 @@
+table:
+  name: feedback
+  schema: laundry_service
+array_relationships:
+  - name: FeedbackOrder
+    using:
+      foreign_key_constraint_on:
+        column: feedback_id
+        table:
+          name: orders
+          schema: laundry_service

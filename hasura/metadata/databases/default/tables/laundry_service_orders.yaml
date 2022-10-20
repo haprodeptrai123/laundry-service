@@ -1,0 +1,74 @@
+table:
+  name: orders
+  schema: laundry_service
+array_relationships:
+  - name: OrderCustomer
+    using:
+      manual_configuration:
+        column_mapping:
+          customer_id: customer_id
+        insertion_order: null
+        remote_table:
+          name: customers
+          schema: laundry_service
+  - name: OrderFeedback
+    using:
+      manual_configuration:
+        column_mapping:
+          feedback_id: feedback_id
+        insertion_order: null
+        remote_table:
+          name: feedback
+          schema: laundry_service
+  - name: OrderManager
+    using:
+      manual_configuration:
+        column_mapping:
+          manager_id: manager_id
+        insertion_order: null
+        remote_table:
+          name: manager
+          schema: laundry_service
+  - name: OrderOrderDetail
+    using:
+      manual_configuration:
+        column_mapping:
+          order_id: order_id
+        insertion_order: null
+        remote_table:
+          name: orderdetail
+          schema: laundry_service
+  - name: OrderPayment
+    using:
+      manual_configuration:
+        column_mapping:
+          payment_id: payment_id
+        insertion_order: null
+        remote_table:
+          name: payment
+          schema: laundry_service
+  - name: OrderStaff
+    using:
+      manual_configuration:
+        column_mapping:
+          staff_id: staff_id
+        insertion_order: null
+        remote_table:
+          name: staff
+          schema: laundry_service
+  - name: OrderTrans
+    using:
+      foreign_key_constraint_on:
+        column: order_id
+        table:
+          name: transaction
+          schema: laundry_service
+  - name: OrderVendor
+    using:
+      manual_configuration:
+        column_mapping:
+          vendor_id: vendor_id
+        insertion_order: null
+        remote_table:
+          name: vendor
+          schema: laundry_service

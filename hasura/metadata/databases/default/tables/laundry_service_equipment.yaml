@@ -1,0 +1,11 @@
+table:
+  name: equipment
+  schema: laundry_service
+array_relationships:
+  - name: EquipmentOrderDetail
+    using:
+      foreign_key_constraint_on:
+        column: equipment_id
+        table:
+          name: orderdetail
+          schema: laundry_service

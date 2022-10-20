@@ -1,0 +1,13 @@
+table:
+  name: trackingorder
+  schema: laundry_service
+array_relationships:
+  - name: TrackOrderDetail
+    using:
+      manual_configuration:
+        column_mapping:
+          order_detail_id: order_detail_id
+        insertion_order: null
+        remote_table:
+          name: orderdetail
+          schema: laundry_service

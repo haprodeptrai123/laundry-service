@@ -1,0 +1,47 @@
+table:
+  name: staff
+  schema: laundry_service
+array_relationships:
+  - name: StaffManager
+    using:
+      manual_configuration:
+        column_mapping:
+          manager_id: manager_id
+        insertion_order: null
+        remote_table:
+          name: manager
+          schema: laundry_service
+  - name: StaffOrder
+    using:
+      manual_configuration:
+        column_mapping:
+          staff_id: staff_id
+        insertion_order: null
+        remote_table:
+          name: orders
+          schema: laundry_service
+  - name: StaffProcess
+    using:
+      manual_configuration:
+        column_mapping:
+          staff_id: staff_id
+        insertion_order: null
+        remote_table:
+          name: process
+          schema: laundry_service
+  - name: StaffVendor
+    using:
+      manual_configuration:
+        column_mapping:
+          vendor_id: vendor_id
+        insertion_order: null
+        remote_table:
+          name: vendor
+          schema: laundry_service
+  - name: StaffWorkSchedules
+    using:
+      foreign_key_constraint_on:
+        column: staff_id
+        table:
+          name: workschedule
+          schema: laundry_service

@@ -1,0 +1,11 @@
+table:
+  name: payment
+  schema: laundry_service
+array_relationships:
+  - name: PaymentTrans
+    using:
+      foreign_key_constraint_on:
+        column: payment_id
+        table:
+          name: transaction
+          schema: laundry_service

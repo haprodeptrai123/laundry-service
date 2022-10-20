@@ -1,0 +1,1 @@
+CREATE TABLE "laundry_service"."voucher" ("voucher_id" serial NOT NULL, "voucher_name" text NOT NULL, "voucher_description" text NOT NULL, "start_date" date NOT NULL DEFAULT now(), "end_date" date NOT NULL, "service_id" integer NOT NULL, "condition_weight" integer NOT NULL, "voucher_quantity" integer NOT NULL, PRIMARY KEY ("voucher_id") , UNIQUE ("voucher_id"));

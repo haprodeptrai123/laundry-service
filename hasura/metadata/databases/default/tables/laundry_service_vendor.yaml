@@ -1,0 +1,31 @@
+table:
+  name: vendor
+  schema: laundry_service
+array_relationships:
+  - name: VendorManager
+    using:
+      manual_configuration:
+        column_mapping:
+          vendor_id: vendor_id
+        insertion_order: null
+        remote_table:
+          name: manager
+          schema: laundry_service
+  - name: VendorOrder
+    using:
+      manual_configuration:
+        column_mapping:
+          vendor_id: vendor_id
+        insertion_order: null
+        remote_table:
+          name: vendor
+          schema: laundry_service
+  - name: VendorStaff
+    using:
+      manual_configuration:
+        column_mapping:
+          vendor_id: vendor_id
+        insertion_order: null
+        remote_table:
+          name: staff
+          schema: laundry_service

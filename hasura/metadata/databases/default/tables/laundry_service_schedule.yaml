@@ -1,0 +1,13 @@
+table:
+  name: schedule
+  schema: laundry_service
+array_relationships:
+  - name: ScheduleWSchedule
+    using:
+      manual_configuration:
+        column_mapping:
+          schedule_id: schedule_id
+        insertion_order: null
+        remote_table:
+          name: workschedule
+          schema: laundry_service

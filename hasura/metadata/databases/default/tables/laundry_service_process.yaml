@@ -1,0 +1,31 @@
+table:
+  name: process
+  schema: laundry_service
+array_relationships:
+  - name: ProcessManager
+    using:
+      manual_configuration:
+        column_mapping:
+          manager_id: manager_id
+        insertion_order: null
+        remote_table:
+          name: manager
+          schema: laundry_service
+  - name: ProcessOrderDetail
+    using:
+      manual_configuration:
+        column_mapping:
+          order_detail_id: order_detail_id
+        insertion_order: null
+        remote_table:
+          name: orderdetail
+          schema: laundry_service
+  - name: ProcessStaff
+    using:
+      manual_configuration:
+        column_mapping:
+          staff_id: staff_id
+        insertion_order: null
+        remote_table:
+          name: staff
+          schema: laundry_service

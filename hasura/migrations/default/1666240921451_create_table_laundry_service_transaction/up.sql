@@ -1,0 +1,1 @@
+CREATE TABLE "laundry_service"."transaction" ("transaction_id" serial NOT NULL, "order_id" integer NOT NULL, "payment_id" integer NOT NULL, "transaction_date" timestamp NOT NULL, PRIMARY KEY ("transaction_id") , UNIQUE ("transaction_id"));

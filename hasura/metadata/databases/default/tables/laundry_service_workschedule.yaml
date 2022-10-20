@@ -1,0 +1,31 @@
+table:
+  name: workschedule
+  schema: laundry_service
+array_relationships:
+  - name: WScheduleManager
+    using:
+      manual_configuration:
+        column_mapping:
+          manager_id: manager_id
+        insertion_order: null
+        remote_table:
+          name: manager
+          schema: laundry_service
+  - name: WScheduleSchedule
+    using:
+      manual_configuration:
+        column_mapping:
+          schedule_id: schedule_id
+        insertion_order: null
+        remote_table:
+          name: schedule
+          schema: laundry_service
+  - name: WScheduleStaff
+    using:
+      manual_configuration:
+        column_mapping:
+          staff_id: staff_id
+        insertion_order: null
+        remote_table:
+          name: staff
+          schema: laundry_service

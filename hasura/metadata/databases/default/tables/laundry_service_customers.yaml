@@ -1,0 +1,11 @@
+table:
+  name: customers
+  schema: laundry_service
+array_relationships:
+  - name: CustomerOrder
+    using:
+      foreign_key_constraint_on:
+        column: customer_id
+        table:
+          name: orders
+          schema: laundry_service

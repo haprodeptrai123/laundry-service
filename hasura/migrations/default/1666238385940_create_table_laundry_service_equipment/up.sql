@@ -1,0 +1,1 @@
+CREATE TABLE "laundry_service"."equipment" ("equipment_id" serial NOT NULL, "equipment_name" text NOT NULL, "equipment_description" text NOT NULL, "equipment_price" text NOT NULL, PRIMARY KEY ("equipment_id") );
