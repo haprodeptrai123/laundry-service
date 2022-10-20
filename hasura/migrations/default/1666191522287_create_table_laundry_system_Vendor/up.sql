@@ -1,1 +1,0 @@
-CREATE TABLE "laundry_system"."Vendor" ("vendor_id" integer NOT NULL, "vendor_name" text NOT NULL, "phone" text NOT NULL, "email" text NOT NULL, "street" text NOT NULL, "district" text NOT NULL, "city" text NOT NULL, "zip_code" text NOT NULL, PRIMARY KEY ("vendor_id") , UNIQUE ("vendor_id"));

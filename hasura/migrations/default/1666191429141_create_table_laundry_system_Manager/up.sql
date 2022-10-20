@@ -1,1 +1,0 @@
-CREATE TABLE "laundry_system"."Manager" ("manager_id" Integer NOT NULL, "full_name" text NOT NULL, "email" text NOT NULL, "phone" text NOT NULL, "password" text NOT NULL, "vendor_id" integer NOT NULL, PRIMARY KEY ("manager_id") , UNIQUE ("manager_id"));

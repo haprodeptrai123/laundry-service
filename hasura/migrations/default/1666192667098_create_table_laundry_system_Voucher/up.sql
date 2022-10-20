@@ -1,1 +1,0 @@
-CREATE TABLE "laundry_system"."Voucher" ("voucher_id" Integer NOT NULL, "voucher_name" text NOT NULL, "voucher_description" text NOT NULL, "start_date" date NOT NULL, "end_date" date NOT NULL, "service_id" integer NOT NULL, "condition_weight" integer NOT NULL, "voucher_quantity" integer NOT NULL, PRIMARY KEY ("voucher_id") , UNIQUE ("voucher_id"));

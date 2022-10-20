@@ -1,1 +1,0 @@
-CREATE TABLE "laundry_system"."OrderDetails" ("order_detail_id" Integer NOT NULL, "order_id" integer NOT NULL, "service_id" integer NOT NULL, "product_id" integer NOT NULL, "equipment_id" integer NOT NULL, "voucher_id" integer NOT NULL, "quantity" integer NOT NULL, "weight" float8 NOT NULL, PRIMARY KEY ("order_detail_id") , UNIQUE ("order_detail_id"));

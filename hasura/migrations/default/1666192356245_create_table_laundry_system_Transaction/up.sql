@@ -1,1 +1,0 @@
-CREATE TABLE "laundry_system"."Transaction" ("transaction_id" Integer NOT NULL, "order_id" integer NOT NULL, "payment_id" integer NOT NULL, "transaction_date" timestamp NOT NULL, PRIMARY KEY ("transaction_id") , UNIQUE ("transaction_id"));
