@@ -1,1 +1,0 @@
-INSERT INTO "laundry_system"."Staffs"("staff_id", "vendor_id", "manager_id", "full_name", "email", "phone", "staff_role", "working_status") VALUES (1, 1, 1, E'Luat', E'luatdm@gmail.com', E'0123321123', E'Staff', true);

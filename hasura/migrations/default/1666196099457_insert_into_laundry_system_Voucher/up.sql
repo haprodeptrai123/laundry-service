@@ -1,1 +1,0 @@
-INSERT INTO "laundry_system"."Voucher"("voucher_id", "voucher_name", "voucher_description", "start_date", "end_date", "service_id", "condition_weight", "voucher_quantity") VALUES (1, E'RUN50', E'RUN AND NOTHING HAPPENS', E'2022-10-19', E'2022-11-10', 1, 4, 5000);
