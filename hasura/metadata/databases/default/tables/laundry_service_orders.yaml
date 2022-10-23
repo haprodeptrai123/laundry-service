@@ -72,3 +72,10 @@ array_relationships:
         remote_table:
           name: vendor
           schema: laundry_service
+  - name: TrackingOrders
+    using:
+      foreign_key_constraint_on:
+        column: order_id
+        table:
+          name: trackingorder
+          schema: laundry_service

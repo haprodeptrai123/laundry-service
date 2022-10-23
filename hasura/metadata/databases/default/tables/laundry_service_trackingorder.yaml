@@ -2,12 +2,12 @@ table:
   name: trackingorder
   schema: laundry_service
 array_relationships:
-  - name: TrackOrderDetail
+  - name: TrackingOrder
     using:
       manual_configuration:
         column_mapping:
-          order_detail_id: order_detail_id
+          order_id: order_id
         insertion_order: null
         remote_table:
-          name: orderdetail
+          name: orders
           schema: laundry_service

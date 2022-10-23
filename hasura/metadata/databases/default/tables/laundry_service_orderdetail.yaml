@@ -45,13 +45,6 @@ array_relationships:
         remote_table:
           name: service
           schema: laundry_service
-  - name: OrderDetailTracking
-    using:
-      foreign_key_constraint_on:
-        column: order_detail_id
-        table:
-          name: trackingorder
-          schema: laundry_service
   - name: OrderDetailVoucher
     using:
       manual_configuration:
