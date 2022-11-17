@@ -1,1 +1,9 @@
-[]
+- comment: test1
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: test1
+  methods:
+    - GET
+  name: test1
+  url: test1

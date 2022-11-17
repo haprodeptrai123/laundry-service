@@ -1,1 +1,15 @@
-[]
+- name: allowed-queries
+  definition:
+    queries:
+      - name: test1
+        query: |
+          query MyQuery {
+            laundry_service_customers {
+              active
+              address
+              customer_id
+              email
+              fullname
+              phone
+            }
+          }

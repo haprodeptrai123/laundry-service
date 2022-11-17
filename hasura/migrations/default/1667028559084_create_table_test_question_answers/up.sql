@@ -1,0 +1,1 @@
+CREATE TABLE "test"."question_answers" ("id" uuid NOT NULL, "answer" text NOT NULL, "is_correct" boolean NOT NULL, "question_id" uuid NOT NULL, PRIMARY KEY ("id") , FOREIGN KEY ("question_id") REFERENCES "test"."questions"("id") ON UPDATE restrict ON DELETE restrict);

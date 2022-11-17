@@ -19,5 +19,7 @@ services:
       HASURA_GRAPHQL_ENABLE_CONSOLE: "true" # set to "false" to disable console
       ## uncomment next line to set an admin secret
       HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
+      HASURA_GRAPHQL_JWT_SECRET: '{"type":"RS256","jwk_url": "https://www.googleapis.com/service_accounts/v1/jwk/securetoken@system.gserviceaccount.com", "audience": "lds-system", "issuer": "https://securetoken.google.com/lds-system"}'
+
 volumes:
   db_data:

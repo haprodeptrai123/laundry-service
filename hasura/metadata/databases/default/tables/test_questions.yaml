@@ -1,0 +1,26 @@
+table:
+  name: questions
+  schema: test
+array_relationships:
+  - name: question_answers
+    using:
+      foreign_key_constraint_on:
+        column: question_id
+        table:
+          name: question_answers
+          schema: test
+  - name: user_answers
+    using:
+      foreign_key_constraint_on:
+        column: question_id
+        table:
+          name: user_answers
+          schema: test
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - created_at
+        - id
+        - question
+      filter: {}

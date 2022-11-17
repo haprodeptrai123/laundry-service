@@ -1,0 +1,18 @@
+table:
+  name: users
+  schema: test
+array_relationships:
+  - name: user_answers
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          name: user_answers
+          schema: test
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - name
+        - score
+      filter: {}
