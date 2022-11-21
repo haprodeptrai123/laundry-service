@@ -15,7 +15,3 @@
 - "!include laundry_service_vendor.yaml"
 - "!include laundry_service_voucher.yaml"
 - "!include laundry_service_workschedule.yaml"
-- "!include test_question_answers.yaml"
-- "!include test_questions.yaml"
-- "!include test_user_answers.yaml"
-- "!include test_users.yaml"
