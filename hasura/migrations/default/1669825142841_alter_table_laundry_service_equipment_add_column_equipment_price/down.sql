@@ -1,0 +1,4 @@
+-- Could not auto-generate a down migration.
+-- Please write an appropriate down migration for the SQL below:
+-- alter table "laundry_service"."equipment" add column "equipment_price" float4
+--  not null default '1';
